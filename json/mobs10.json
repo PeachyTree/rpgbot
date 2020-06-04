@@ -1,0 +1,72 @@
+[
+    {
+        "name":"Cyclope",
+        "orbs": 35,
+        "xp": 32,
+        "damage": 27,
+        "health": 540
+    },
+    {
+        "name":"Daemons",
+        "orbs": 30,
+        "xp": 28,
+        "damage": 4,
+        "health": 1230
+    },
+    {
+        "name":"Gegenees",
+        "orbs": 34,
+        "xp": 31,
+        "damage": 24,
+        "health": 403
+    },
+    {
+        "name":"Gorgons",
+        "orbs": 55,
+        "xp": 14,
+        "damage": 22,
+        "health": 752
+    },
+    {
+        "name":"Graeae",
+        "orbs": 36,
+        "xp": 30,
+        "damage": 24,
+        "health": 924
+    },
+    {
+        "name":"Griffin",
+        "orbs": 33,
+        "xp": 31,
+        "damage": 21,
+        "health": 643
+    },
+    {
+        "name":"Hecatonchire",
+        "orbs": 39,
+        "xp": 25,
+        "damage": 19,
+        "health": 521
+    },
+    {
+        "name":"Harpies",
+        "orbs": 14,
+        "xp": 65,
+        "damage": 21,
+        "health": 653
+    },
+    {
+        "name":"Hippalectryon",
+        "orbs": 25,
+        "xp": 25,
+        "damage": 22,
+        "health": 451
+    },
+    {
+        "name":"Hippocampus",
+        "orbs": 22,
+        "xp": 43,
+        "damage": 23,
+        "health": 432
+    }
+]

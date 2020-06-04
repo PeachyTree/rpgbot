@@ -1,0 +1,54 @@
+
+
+[  
+{
+    "name": "Anger's Tear",
+    "damage": 10,
+      "type": "sword"
+
+},
+{
+    "name": "Sinister Sabre",
+    "damage": 15,
+      "type": "sword"
+
+},
+{
+    "name": "Phantom Warblade",
+    "damage": 25,
+    "type": "sword"
+},
+{
+    "name":"Nethersbane Blade",
+    "damage": 20,
+    "type": "sword"
+},
+{
+    "name":"Skullforge Katana",
+    "damage": 30,
+    "type": "sword"
+},
+{
+    "name":"Lusting Gold Warblade",
+    "damage": 22,
+    "type": "sword"
+},
+{
+    "name":"Desire's Warblade",
+    "damage": 24,
+      "type": "sword"
+
+},
+{
+    "name":"Shadowfang",
+    "damage": 21,
+      "type": "sword"
+
+},
+{
+    "name":"Singing Spellblade",
+    "damage": 26,
+      "type": "sword"
+
+}
+]

@@ -1,0 +1,57 @@
+[  
+    {
+        "name": "The Royal Necklace",
+        "damage": 74,
+        "health": 182,
+        "type": "necklace"
+    },
+    {
+        "name": "Diamond Necklace",
+        "damage": 92,
+        "health": 156,
+        "type": "necklace"
+    },
+    {
+        "name": "Soul Reaper",
+        "damage": 58,
+        "health": 1,
+        "type": "sword"
+    },
+    {
+        "name": "Fearful Slicer",
+        "damage": 60,
+        "type": "sword"
+    },
+    {
+        "name": "Wretched Mageblade",
+        "damage": 63,
+        "type": "sword"
+    },
+    {
+        "name": "Mournblade",
+        "damage": 54,
+        "type": "sword"
+    },
+    {
+        "name": "Ghostly Iron Shortsword",
+        "damage": 59,
+        "type": "sword"
+    },
+    {
+        "name": "Blazing Fury",
+        "damage": 78,
+        "type": "sword"
+    },
+    {
+        "name": "Yew Bow",
+        "damage": 26,
+        "health": 56,
+        "type": "bow"
+    },
+    {
+        "name": "Maple Warbow",
+        "damage": 23,
+        "health": 52,
+        "type": "bow"
+    }
+]

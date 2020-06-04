@@ -1,0 +1,7 @@
+[ 
+    {
+        "crate": "Normal Crate",
+        "rewards": [ {"name":"Skullforge Katana", "damage": 34, "type": "sword"}, {"name":"Peacekeeper Sword", "damage": 70, "type": "sword"}, {"name":"Isolated Greatsword", "damage": 44, "type": "sword"}, {"name": "The Black Blade", "damage": 58, "type":"sword"}],
+        "type": "normal"
+    }
+]

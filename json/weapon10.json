@@ -1,0 +1,73 @@
+[  
+    {
+        "name": "Polished Steel Sword",
+        "damage": 32,
+        "type": "sword"
+    },
+    {
+        "name": "Lightbringer",
+        "damage": 34,
+        "type": "sword"
+    },
+    {
+        "name": "Gladiator's Broadsword",
+        "damage": 30,
+        "type": "sword"
+    },    {
+        "name": "Battleworn Broadsword",
+        "damage": 29,
+        "type": "sword"
+    },
+    {
+        "name": "Dire Silver Spellblade",
+        "damage": 34,
+        "type": "sword"
+    },
+    {
+        "name": "Cold-Forged Silver Katana",
+        "damage": 28,
+        "type": "sword"
+    },
+    {
+        "name": "Shadow Silk Chestplate",
+        "damage": 0,
+        "health": 150,
+        "type": "chestplate"
+    },
+    {
+        "name": "Wit of Dawn Chestplate",
+        "damage": 0,
+        "health": 179,
+        "type": "chestplate"
+    },
+    {
+        "name": "Cursed Ivory Leggings",
+        "damage": 0,
+        "health": 80,
+        "type": "leggings"
+    },
+    {
+        "name": "Leggings of Infinite Sorrow",
+        "damage": 0,
+        "health": 109,
+        "type": "leggings"
+    },
+    {
+        "name": "Warrior's Demon Boots",
+        "damage": 0,
+        "health": 45,
+        "type": "boots"
+    },
+    {
+        "name": "Baneful Quilted Boots",
+        "damage": 0,
+        "health": 60,
+        "type": "boots"
+    },
+    {
+        "name": "Helmet of the Frozen Illusions",
+        "damage": 0,
+        "health": 40,
+        "type": "helmet"
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "name":"Ichthyocentaur",
+        "orbs": 65,
+        "xp": 54,
+        "damage": 89,
+        "health": 870
+    },
+    {
+        "name":"Ipotane",
+        "orbs": 58,
+        "xp": 47,
+        "damage": 70,
+        "health": 800
+    },
+    {
+        "name":"Keres",
+        "orbs": 70,
+        "xp": 65,
+        "damage": 65,
+        "health": 750
+    },
+    {
+        "name":"Laestrygonians",
+        "orbs": 49,
+        "xp": 45,
+        "damage": 55,
+        "health": 900
+    },
+    {
+        "name":"Manticore",
+        "orbs": 55,
+        "xp": 65,
+        "damage": 53,
+        "health": 820
+    },
+    {
+        "name":"Minotaur",
+        "orbs": 140,
+        "xp": 170,
+        "damage": 102,
+        "health": 940
+    },
+    {
+        "name":"Odontotyrannos",
+        "orbs": 100,
+        "xp": 120,
+        "damage": 89,
+        "health": 920
+    },
+    {
+        "name":"Ophiotaurus",
+        "orbs": 240,
+        "xp": 170,
+        "damage": 134,
+        "health": 990
+    }
+]

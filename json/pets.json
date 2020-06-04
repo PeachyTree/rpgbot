@@ -1,0 +1,72 @@
+[
+    {
+        "name":"Flameshadow",
+        "damage": 34,
+        "type": "dragon",
+        "img": "https://cdn.playbuzz.com/cdn/4165c285-a228-4799-8920-2315d2bace19/cb0ec50d-e213-47aa-893a-39a9c39028a6.jpg",
+        "level": 1,
+        "thing": "pet",
+        "evolution": 1,
+        "price": 8900
+    },
+    {
+        "name":"Dust Serpent",
+        "damage": 45,
+        "type": "serpent",
+        "price":9300,
+        "thing": "pet",
+        "img": "http://corwyn.wdfiles.com/local--files/serpent-folk/Serpent%20Folk.jpg",
+        "level": 1,
+        "evolution": 1
+    },
+    {
+        "name":"Toxinwing",
+        "damage": 55,
+        "thing": "pet",
+        "type": "eagle",
+        "price": 10000,
+        "img": "https://png.pngtree.com/element_origin_min_pic/16/09/01/2257c8410f8e377.jpg",
+        "level": 1,
+        "evolution": 1
+    },
+    {
+        "name":"Shadowflayer",
+        "damage": 70,
+        "price":10500,        
+        "thing": "pet",
+        "type": "eagle",
+        "img": "https://vignette.wikia.nocookie.net/amanecer-rojo/images/5/57/Grifo.png/revision/latest?cb=20180429020739&path-prefix=es",
+        "level": 1,
+        "evolution": 1
+    },
+    {
+        "name":"Phantom",
+        "damage": 89,
+        "thing": "pet",
+        "type": "ghost",
+        "price": 11000,
+        "img": "https://vignette.wikia.nocookie.net/castleage/images/b/ba/Monster_phantom_fire_large_dead.jpg/revision/latest?cb=20161026221041",
+        "level": 1,
+        "evolution": 1
+    },
+    {
+        "name":"Hell slayer",
+        "damage": 102,
+        "price": 12000,
+        "thing": "pet",
+        "type": "demon",
+        "img": "https://cache.desktopnexus.com/thumbseg/154/154597-bigthumbnail.jpg",
+        "level": 1,
+        "evolution": 1
+    },
+    {
+        "name":"Devil's sergeant",
+        "damage": 206,
+        "thing": "pet",
+        "type": "demon",
+        "price":17500,
+        "img": "https://i.pinimg.com/originals/4b/ea/b8/4beab82f2bcd6f72cfb0907642c36d4a.jpg",
+        "level": 1,
+        "evolution": 1
+    }
+]

@@ -1,0 +1,93 @@
+[
+    {
+        "name":"zeus",
+        "orbs": 70000,
+        "xp": 140000,
+        "damage": 4620,
+        "health": 5000000,
+        "attacks": [{"attack": "Bolt", "damage": 5600 }, {"attack": "ThunderStrike", "damage": 3500}, {"attack": "Lightning Strike", "damage": 4000}],
+        "level": 500,
+        "type": "bow",
+        "heavy": [{"heavy": "Lightnings Of Heaven", "damage": 25000}],
+        "weapon": "Zeus ThunderBolt",
+        "description": "Zeus was the father of the famous Greek hero Hercules.The name Zeus means [bright] or [sky]. His weapon of choice was the thunderbolt, made for him by the Cyclops."
+    },
+    {
+        "name":"poseidon",
+        "orbs": 60000,
+        "xp": 120000,
+        "damage": 3405,
+        "health": 4300000,
+        "type": "sword",
+        "level": 450,
+        "heavy": [{"heavy": "Attack Of The Sea", "damage": 23500}],
+        "weapon":"Poseidons Trident",
+        "attacks": [{"attack": "Water Flow", "damage": 3600}, {"attack": "Tsunami", "damage": 2670}, {"attack": "Creatures Of The Sea", "damage": 1950}],
+        "description": "Poseidon was allotted his dominion after the fall of the Titans. He wielded the trident or three-pronged spear, and this image of him is reflected in art. Poseidon was most notably the God of the sea and the protector of all waters.        "
+    },
+    {
+        "name":"hades",
+        "orbs": 50000,
+        "xp": 100000,
+        "damage": 3100,
+        "health": 4000000,
+        "heavy": [{"heavy": "Creatures Of The Night", "damage": 22000}],
+        "attacks": [{"attack": "Blazing Spear", "damage": 2430}, {"attack":"Roaring Blaze", "damage": 1200}, {"attack":"Bursting Flame", "damage": 2120}],
+        "weapon": "Hades Bident",
+        "type": "sword",
+        "level": 400,
+        "description": "He was also called the God of Wealth or “the rich one” because he possessed the precious metals of the earth. Hades had a cap or helmet that made its wearer invisible. His wife was Persephone, Demeter’s only daughter, whom he kidnapped and made his queen. also the ruler of the underworld."
+    },
+    {
+        "name":"apollo",
+        "orbs": 40000,
+        "xp": 80000,
+        "damage": 2540,
+        "type": "bow",
+        "health": 1200000,
+        "attacks": [{ "attack": "Burning Arrow", "damage": 2430  }, { "attack": "Rain Of Arrows", "damage": 3403}, { "attack": "Quick Shot", "damage": 1200}],
+        "weapon": "Apollo's Bow",
+        "heavy": [{"heavy": "Rain Of Arrows", "damage": 19500}],
+        "level": 200,
+        "description": "Apollo was the son of Leto and Zeus. He was born on the island of Delos. He and his twin sister Artemis, also an Olympian, shared an aptitude for archery.The nine Muses were companions of his; they were goddesses known for inspiring art and music."
+    },
+    {
+        "name":"ares",
+        "orbs": 36000,
+        "type": "sword",
+        "xp": 75000,
+        "damage": 2300,
+        "health": 1000000,
+        "weapon": "Sword Of Ares",
+        "heavy": [{"attack": "Burning Ashes", "damage": 19200}],
+        "level": 175,
+        "attacks": [{"attack": "Pure Strike", "damage": 2102 }, {"attack": "Slash", "damage": 1820 }, { "attack": "Quivering Blade", "damage": 1405 }],
+        "description": "He was the son of Zeus and Hera, both of whom hated him (according to Homer). Eros (more commonly known as Cupid) was the child of Ares and Aphrodite. Ares was most notably referred to as the God of War; he represented the unpleasant aspects of battle."
+    },
+    {
+        "name":"athena",
+        "orbs": 78000,
+        "xp": 82000,
+        "damage": 3020,
+        "type": "sword",
+        "health": 1400000,
+        "level": 225,
+        "heavy": [{"heavy": "Art of War", "damage": 21200}],
+        "weapon": "Spear Of Athena",
+        "attacks": [{"attack": "Blazing Spear", "damage": 2403 }, {"attack": "Spear of Fury", "damage": 1800 }, {"attack": "Disrupting Throw", "damage": 1200 }],
+        "description": "Athena was the Goddess of War, the female counterpart of Ares. She is one of three virgin goddesses; the other two were Hestia and Artemis.Athena served as a guardian of Athens, where the Parthenon served as her temple."
+    },
+    {
+        "name":"Hera",
+        "orbs": 60000,
+        "xp": 78000,
+        "level": 235,
+        "weapon": "Flower Of Love",
+        "type": "bow",
+        "heavy": [{"heavy": "Power Of Love", "damage": 18600}],
+        "description": "Hera was Queen of the Olympian gods. In the story of the Quest of the Golden Fleece, Hera was a gracious protector of the heroes.Hera had few, if any, redeeming qualities. She never forgot an injury.",
+        "damage": 2300,
+        "health": 1200000,
+        "attacks": [{"attack": "Love Rush", "damage": 2120}, {"attack": "Flower Spike", "damage": 1980 }, {"attack": "Confusion Of Love", "damage": 1560}]
+    }
+]

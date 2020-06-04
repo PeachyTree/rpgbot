@@ -1,0 +1,207 @@
+
+[
+  {
+    "question": "How much does the world's smallest phone weigh?",
+    "answer": "13 grams",
+    "answers": ["11 grams", "13 grams", "15 grams", "20 grams"],
+    "topic": "facts"
+  },
+  {
+    "question": "Orcinus orca is the scientific name for which animal?",
+    "answer": "Killer Whale",
+    "answers": ["Lion", "Killer Whale", "Blue Whale", "Dolphin"],
+    "topic": "Animal"
+  },
+  {
+    "question": "Which bird has eyes that are larger than its brain?",
+    "answer": "Ostrich",
+    "answers": ["Chaffinch", "Blackbird", "Collared Dove", "Ostrich"],
+    "topic": "Animal"
+  },
+  {
+    "question": "What is the only snake in the world that builds a nest for its eggs?",
+    "answer": "King Cobra",
+    "answers": ["Black Snake", "Bull Snake", "King Cobra", "Cobra"],
+    "topic": "Animal"
+  },
+  {
+    "question": "What does the online acronym SMH stand for?",
+    "answer": "Shaking my head",
+    "answers": ["Shaking my head", "Smash my head", "Scratching my head", "Slow my head"],
+    "topic": "computer"
+  },
+  {
+    "question": "What was the first publicly traded U.S. company to reach a $1 trillion market cap?",
+    "answer": "Apple",
+    "answers": ["Apple", "Android", "Nokia", "FaceBook"],
+    "topic": "computer"
+  },
+  {
+    "question": "What year did the Spanish Civil War end?",
+    "answer": "1939",
+    "answers": ["1939", "1924", "1976", "1892"],
+    "topic": "history"
+  },
+  {
+    "question": "When did the First World War start?",
+    "answer": "1914",
+    "answers": ["1914", "1945", "1935", "1912"],
+    "topic": "history"
+  },
+  {
+    "question": "What does the roman numeral C represent?",
+    "answer": "100",
+    "answers": ["50", "100", "540", "200"],
+    "topic": "math"
+  },
+  {
+    "question": "When did the American Civil War end?",
+    "answer": "1865",
+    "answers": ["1843", "1865", "1892", "1901"],
+    "topic": "history"
+  },
+  {
+    "question": "Who said E=mc2",
+    "answer": "Einstein",
+    "answers": ["Einstein", "Nikolas Tesla", "Isaac Newton", "Shakespeare"],
+    "topic": "history"
+  },
+  {
+    "question": "Which is the largest ocean?",
+    "answer": "Pacific",
+    "answers": ["Ocean", "Pacific", "Atlanta", "Black Sea"],
+    "topic": "geography"
+  },
+  {
+    "question": "How many squares are there on a chess board?",
+    "answer": "64",
+    "answers": ["32", "16", "64", "12"],
+    "topic": "facts"
+  },
+  {
+    "question": "How many prongs are there on a fork?",
+    "answer": "4",
+    "answers": ["4", "8", "16", "12"],
+    "topic": "facts"
+  },
+  {
+    "question": "How many events are there in the decathlon?",
+    "answer": "10",
+    "answers": ["10", "12", "24", "64"],
+    "topic": "facts"
+  },
+  {
+    "question": "What language has the most words?",
+    "answer": "English",
+    "answers": ["English", "Spanish", "Italian", "Portugese"],
+    "topic": "facts"
+  },
+  {
+    "question": "What nationality was Marco Polo?",
+    "answer": "Italian",
+    "answers": ["Italian", "Mongolian", "Spanish", "Moroccan"],
+    "topic": "history"
+  },
+  {
+    "question": "Which city's landmarks include: The Pantheon, The Spanish Steps and Trevi Fountain?",
+    "answer": "Rome",
+    "answers": ["Barcelona", "Rome", "Athens", "Istanbul"],
+    "topic": "facts"
+  },
+  {
+    "question": "Which truck is produced by the Ford Motor Company?",
+    "answer": "F-150",
+    "answers": ["F-150", "Silverado 1500", "RAV4", "CR-V"],
+    "topic": "cars"
+  },
+  {
+    "question": "What temperature is the same in Celsius and Fahrenheit?",
+    "answer": "-40°",
+    "answers": ["+100°", "+40°", "-40°", "0°"],
+    "topic": "facts"
+  },
+  {
+    "question": "Which actor does not appear in 'Saving Private Ryan'?",
+    "answer": "Ralph Fiennes",
+    "answers": ["Giovanni Ribisi", "Tom Hanks", "Vin Diesel", "Ralph Fiennes"],
+    "topic": "facts"
+  },
+  {
+    "question": "Other than eggs, what is a primary ingredient in Eggs Florentine?",
+    "answer": "Spinach",
+    "answers": ["Gorgonzola", "Ham", "Avocado", "Spinach"],
+    "topic": "facts"
+  },
+  {
+    "question": "Which mammal first reached Earth's orbit alive?",
+    "answer": "Dog",
+    "answers": ["Dog", "Cat", "Human", "Monkey"],
+    "topic": "history"
+  },
+  {
+    "question": "What religion is the most practiced one in India?",
+    "answer": "Hinduism",
+    "answers": ["Shinto", "Islam", "Sikhism", "Hinduism"],
+    "topic": "facts"
+  },
+  {
+    "question": "In which language was the book 'War and Peace' originally written?",
+    "answer": "Russian",
+    "answers": ["English", "German", "French", "Russian"],
+    "topic": "facts"
+  },
+  {
+    "question": "How many blue stripes does the United States of America national flag have?",
+    "answer": "0",
+    "answers": ["13", "7", "6", "0"],
+    "topic": "facts"
+  },
+  {
+    "question": "What is the largest country, by area, that has only one time zone?",
+    "answer": "China",
+    "answers": ["China", "Turkey", "Australia", "Russia"],
+    "topic": "facts"
+  },
+  {
+    "question": "What is the largest planet in our Solar System?",
+    "answer": "Jupiter",
+    "answers": ["Pluto", "Saturn", "Jupiter", "Earth"],
+    "topic": "space"
+  },
+  {
+    "question": "Which country hosted the Summer Olympics in 2016?",
+    "answer": "Brazil",
+    "answers": ["China", "Brazil", "Spain", "Greece"],
+    "topic": "facts"
+  },
+  {
+    "question": "How many spaces are on a standard Monopoly board?",
+    "answer": "40",
+    "answers": ["20", "40", "80", "60"],
+    "topic": "facts"
+  },
+  {
+    "question": "What did Alfred Nobel develop?",
+    "answer": "Dynamite",
+    "answers": ["Dynamite", "Nobelium", "Atomic Bomb", "Gunpowder"],
+    "topic": "facts"
+  },
+  {
+    "question": "What was the first successful vaccine developed in history?",
+    "answer": "Smallpox",
+    "answers": ["Scarlet Fever", "Cholera", "Rabies", "Smallpox"],
+    "topic": "history"
+  },
+  {
+    "question": "Adele performed the theme song to which James Bond film?",
+    "answer": "Skyfall",
+    "answers": ["Skyfall", "Quantum of Solace", "From Russia With Love", "Casino Royale"],
+    "topic": "movie"
+  },
+  {
+    "question": "What is the color of Donald Duck's bowtie?",
+    "answer": "Red",
+    "answers": ["Red", "Yellow", "Green", "Blue"],
+    "topic": "facts"
+  }
+]

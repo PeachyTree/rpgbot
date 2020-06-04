@@ -1,0 +1,82 @@
+
+[  
+{
+    "name":"Catoblepas",
+    "orbs": 10,
+    "xp": 12,
+    "damage": 12,
+    "health": 70
+
+},
+{
+    "name": "Centaur",
+    "orbs": 14,
+    "xp": 16,
+    "damage": 16,
+    "health": 132
+ 
+},
+{
+    "name": "Kentauride",
+    "orbs": 18,
+    "xp": 20,
+    "damage": 20,
+    "health": 120
+ 
+},
+{
+    "name": "Cerastes",
+    "orbs": 22,
+    "xp": 24,
+    "damage": 24,
+    "health": 150
+ 
+},
+{
+    "name": "Cetus",
+    "orbs": 24,
+    "xp": 26,
+    "damage": 26,
+    "health": 2404
+},
+{
+    "name": "Ceuthonymus",
+    "orbs": 20,
+    "xp": 21,
+    "damage": 21,
+    "health": 160
+ 
+},
+{
+    "name": "Charon",
+    "orbs": 24,
+    "xp": 20,
+    "damage": 20,
+    "health": 160
+ 
+},
+{
+    "name": "Charybdis",
+    "orbs": 19,
+    "xp": 16,
+    "damage": 16,
+    "health": 100
+ 
+},
+{
+    "name": "Chimera",
+    "orbs": 14,
+    "xp": 13,
+    "damage": 13,
+    "health": 100
+ 
+},
+{
+    "name": "Crocotta",
+    "orbs": 23,
+    "xp": 26,
+    "damage": 26,
+    "health": 160
+ 
+}
+]

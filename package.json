@@ -1,0 +1,28 @@
+{
+    "name": "rpgbot",
+    "version": "0.7.6",
+    "description": "A Discord bot with a few useful roleplay commands, made with Discord.js.",
+    "main": "RPGBot.js",
+    "scripts": {
+        "start": "node RPGBot.js"
+    },
+    "repository": "git+https://github.com/AzuraApple/rpgbot.git",
+    "bugs": {
+        "url": "https://github.com/AzuraApple/rpgbot/issues"
+    },
+    "homepage": "https://github.com/AzuraApple/rpgbot#readme",
+    "engines": {
+        "node": ">= 8.11.3",
+        "npm": ">= 6.2.0"
+    },
+    "author": "Azura Apple <dragonminner867@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "common-tags": "^1.8.0",
+        "discord.js": "^12.2.0",
+        "discord.js-commando": "^0.10.0",
+        "dotenv": "^8.2.0",
+        "enmap": "^5.2.5",
+        "path": "^0.12.7"
+    }
+}

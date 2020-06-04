@@ -1,0 +1,65 @@
+[
+    {
+        "name": "holy blast",
+        "description": "Causes a huge explosion which deals 500 damage.",
+        "price": 7500,
+        "damage": 500,
+        "type": "damage",
+        "message": "Used holy blast! exploded near enemy deals 500 damage."
+    },
+    {
+        "name": "thunderstorm",
+        "description": "Summons a thunderstorm which deals 540 damage",
+        "price": 9500,
+        "damage": 540,
+        "type":"damage",
+        "message": "Used thunderstorm! lightning strikes was thrown at the enemy dealing 540 damage."
+    },
+    {
+        "name": "lava flash",
+        "description": "Summons a lava flood which burns the enemy and deals 620 damage.",
+        "price": 11000,
+        "damage": 620,
+        "type":"damage",
+        "message": "Used Lava Flash! enemy is burnt & you deal 620 damage."
+    },
+    {
+        "name":"ceremony of water",
+        "description": "Water starts circeling you which increases your health by 1200 HP.",
+        "price": 13000,
+        "health": 1200,
+        "type":"heal",
+        "message": "Used Ceremony of Water! water circles you. Your hp was increased by **1200**."
+    },
+    {
+        "name":"aura of recovery",
+        "description":"Your own glowing aura heals you by 2000 HP!",
+        "price": 16500,
+        "health": 2000,
+        "type": "heal",
+        "message": "An Aura spawns glowing around you. This causes rapid healing which increases your health by **2000** HP."
+    },
+    {
+        "name": "bolt of demon fire",
+        "description": "A quick blast but a lot of power! causing 1430 damage.",
+        "price": 34000,
+        "damage": 1430,
+        "type": "damage",
+        "message": "Fires bolt! hit & caused 1430 damage to opponent."
+    },
+    {
+        "name":"health potion",
+        "description": "Heals you in a battle.",
+        "price": 5000,
+        "type": "heal",
+        "health": 1000
+    },
+    {
+        "name":"xp booster",
+        "description": "Applies a potion which lasts for 30 minutes giving you double xp.",
+        "price": 3000,
+        "time": 1800000,
+        "type": "xp",
+        "mark": "booster"
+    }
+]
