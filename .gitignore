@@ -1,0 +1,12 @@
+# Dependency Files
+node_modules/
+package-lock.json
+
+# Log Files
+logs/
+*.log
+
+# Config Files
+.env
+
+# In-Development Commands (If any, put them here)

@@ -1,0 +1,18 @@
+# Text Files
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+
+# Configs and Stuff
+.gitattributes text eol=lf
+.gitignore text eol=lf
+.npmrc text eol=lf
+.env.example text eol=lf
+
+# Asset Files
+*.jpg binary
+*.png binary
+*.mp3 binary
+*.ttf binary
+*.otf binary
