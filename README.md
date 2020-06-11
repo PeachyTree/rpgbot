@@ -9,7 +9,7 @@ A RPG Discord bot, using Discord.js and Discord.js-commando command framework. I
 * `RPGBOT_PREFIX=` is the prefix of the bot. It can be changed to anything you want. Default is !
 * `OWNER_ID=` the owner of the bot. As example, your ID.
 
-# Channel IDs:
+### Channel IDs:
 `BATTLE_CHANNEL=` is a channel ID for a battle channel, where users can battle against eachother. This is most likely set to a own channel, to avoid any spam. 
 
 ## License
