@@ -7,7 +7,7 @@ module.exports = class ClashCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'clash',
-            group: 'roleplay',
+            group: 'clash',
             memberName: 'clash',
             description: 'Shows your clash stats.',
             examples: ['clash'],

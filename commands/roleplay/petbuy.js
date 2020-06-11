@@ -1,10 +1,13 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
 const arr = require('../../json/pets')
-module.exports = class ReplyCommand extends Command {
+
+module.exports = class PetBuyCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'petbuy',
-            group: "commands",
+            group: "roleplay",
             aliases: ["buy-pet", "buypet", "pet-buy"],
             memberName: 'petbuy',
             description: 'Buy a pet from the pet shop.',
@@ -35,13 +38,11 @@ module.exports = class ReplyCommand extends Command {
         if (!msgs.size) return msg.say('You did not respond with yes or no withing 30 seconds. cancelled purchase.')
         if (msgs.first().content !== "yes") return msg.say('Cancelled purchase.')
 
-
         this.client.util.math(this.client.user.id, "+", 1, "weaponids")
         msg.say('You purchased the pet **' + arr[data].name + `(${arr[data].type})**!`)
+        
         this.client.profile.math(msg.author.id, "-", arr[data].price, "orbs")
         this.client.profile.push(msg.author.id, { id: this.client.util.get(this.client.user.id, "weaponids"), name: arr[data].name, damage: arr[data].damage, type: arr[data].type, img: arr[data].img, level: arr[data].level, evolution: arr[data].evolution, thing: arr[data].thing }, "pets")
         this.client.util.math(this.client.user.id, "+", 1, "weaponids")
-
-        
     }
 };

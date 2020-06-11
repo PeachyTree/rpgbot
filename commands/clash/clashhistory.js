@@ -9,7 +9,7 @@ module.exports = class ClashHistoryCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'clashhistory',
-            group: 'roleplay',
+            group: 'clash',
             memberName: 'clashhistory',
             description: 'Shows recent activites in your clash.',
             examples: ['clashhistory'],

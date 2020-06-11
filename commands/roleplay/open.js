@@ -1,10 +1,13 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
 const { RichEmbed } = require('discord.js')
-module.exports = class ReplyCommand extends Command {
+
+module.exports = class OpenCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'open',
-            group: 'commands',
+            group: 'roleplay',
             memberName: 'open',
             description: 'Open a crate and get rewards.',
             examples: ['open'],
@@ -19,16 +22,18 @@ module.exports = class ReplyCommand extends Command {
     }
 
     run(msg, { crate }) {
-              if (this.client.profile.get(msg.author.id, "started") == "no") return msg.say('You have not started your adventure, use `!start`.')
+        if (this.client.profile.get(msg.author.id, "started") == "no") return msg.say('You have not started your adventure, use `!start`.')
+
         let arr = this.client.profile.get(msg.author.id, "items")
         let data = arr.findIndex(obj => obj.type === crate.toLowerCase())
         console.log(data)  
+        
         if (data === undefined) return msg.say(`You do not own any of these crates.`)
 
         let embed = new RichEmbed()
-        .setTitle(`Unlocking ${crate} 🌀`)
-        .setDescription('***...***')
-        .setColor("RANDOM")
+            .setTitle(`Unlocking ${crate} 🌀`)
+            .setDescription('***...***')
+            .setColor("RANDOM")
         let items = arr[data].rewards[Math.floor(Math.random() * arr[data].rewards.length)]
 
         msg.embed(embed).then(message => {
@@ -40,14 +45,14 @@ module.exports = class ReplyCommand extends Command {
             message.edit(embed2)
           }, 5000);
         })
+
         if (items.health === undefined) items.health = 0;
         if (items.damage === undefined) items.damage = 0;
+
         let weaponid = this.client.util.get(this.client.user.id, "weaponids")
+
         this.client.profile.push(msg.author.id, { id: weaponid + 1, name: items.name, health: items.health, damage: items.damage, type: items.type }, "weapons")
         this.client.util.math(msg.author.id, "+", 1, "weaponids")
         this.client.profile.delete(msg.author.id, `items.${arr[data]}`)
-
-          
-        
     }
 };

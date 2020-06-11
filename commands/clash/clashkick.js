@@ -1,10 +1,12 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
 
-module.exports = class ReplyCommand extends Command {
+module.exports = class ClashKickCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'clashkick',
-            group: 'commands',
+            group: 'clash',
             memberName: 'clashkick',
             description: 'Kick a member of your clash.',
             examples: ['clashkick'],

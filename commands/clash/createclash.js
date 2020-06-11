@@ -1,10 +1,12 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
 
-module.exports = class ReplyCommand extends Command {
+module.exports = class CreateClashCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'createclash',
-            group: 'commands',
+            group: 'clash',
             aliases: ["makeclash", "create-clash", "clashcreate", "clash-create"],
             memberName: 'createclash',
             description: 'Creates your clash, which you can invite people too for boosts.',
@@ -24,9 +26,9 @@ module.exports = class ReplyCommand extends Command {
     }
 
     run(msg, { guildname }) {
-            if (this.client.profile.get(msg.author.id, "started") == "no") return msg.say('You have not started your adventure, use `!start`.')
+        if (this.client.profile.get(msg.author.id, "started") == "no") return msg.say('You have not started your adventure, use `!start`.')
 
-      let arr = this.client.util.get(this.client.user.id, "guildnames")
+        let arr = this.client.util.get(this.client.user.id, "guildnames")
         if (arr.includes(guildname)) return msg.say(`The clash name **` + guildname + '** has already been taken!')
         if (this.client.profile.get(`${msg.author.id}`, "level") < 5) {
             return msg.channel.send({embed: {
@@ -35,6 +37,7 @@ module.exports = class ReplyCommand extends Command {
             }
           })
         }
+
         if (this.client.clash.get(`${msg.author.id}`, "id") != "none") {
            return msg.channel.send({embed: {
                 color: 0xff0000,
@@ -57,19 +60,16 @@ module.exports = class ReplyCommand extends Command {
             id: msg.author.id,
             role: 'none',
             memberids: [],
-      })
+        })
 
-      this.client.clash.set(`${msg.author.id}`, msg.author.id, "id")
-      this.client.clash.push(`${msg.author.id}`, msg.author.id, "memberids")
-      this.client.clash.set(`${msg.author.id}`, "King", "role")
-      this.client.clash.set(`${msg.author.id}`, guildname, "name")
-      this.client.clash.math(`${msg.author.id}`, "+", 1, "members")
-      this.client.profile.math(`${msg.author.id}`, "-", 10000, "orbs")
-      this.client.util.push(this.client.user.id, guildname, "guildnames")
+        this.client.clash.set(`${msg.author.id}`, msg.author.id, "id")
+        this.client.clash.push(`${msg.author.id}`, msg.author.id, "memberids")
+        this.client.clash.set(`${msg.author.id}`, "King", "role")
+        this.client.clash.set(`${msg.author.id}`, guildname, "name")
+        this.client.clash.math(`${msg.author.id}`, "+", 1, "members")
+        this.client.profile.math(`${msg.author.id}`, "-", 10000, "orbs")
+        this.client.util.push(this.client.user.id, guildname, "guildnames")
 
-      return msg.say('Successfully created your clash! Check it with **!clash**.')
-      
-    
-
+        return msg.say('Successfully created your clash! Check it with **!clash**.')
     }
 };

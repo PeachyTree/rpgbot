@@ -6,7 +6,7 @@ module.exports = class ClashDepositCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'clash-deposit',
-            group: 'roleplay',
+            group: 'clash',
             aliases: ["cdep", "cdeposit", "clashdep", "clashdeposit"],
             memberName: 'clash-deposit',
             description: 'Deposit orbs into your clash balance.',
