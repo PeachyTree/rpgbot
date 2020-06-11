@@ -10,3 +10,4 @@ logs/
 .env
 
 # In-Development Commands (If any, put them here)
+.DS_Store
