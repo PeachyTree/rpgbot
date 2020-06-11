@@ -1,10 +1,13 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command, util } = require('discord.js-commando');
 const { RichEmbed } = require('discord.js')
-module.exports = class ReplyCommand extends Command {
+
+module.exports = class PetsCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'pets',
-            group: 'commands',
+            group: 'profile',
             memberName: 'pets',
             description: 'Shows your pet storage.',
             examples: ['pets'],
@@ -25,9 +28,9 @@ module.exports = class ReplyCommand extends Command {
         let data = util.paginate(arr, page, 6)
 
         let embed = new RichEmbed()
-        .setAuthor(`${msg.author.tag} pets | Page ${page}`, msg.author.displayAvatarURL)
-        .setColor("RANDOM")
-        .setFooter('to view another page do !pets <page>')
+            .setAuthor(`${msg.author.tag} pets | Page ${page}`, msg.author.displayAvatarURL)
+            .setColor("RANDOM")
+            .setFooter('to view another page do !pets <page>')
 
         for (var i = 0; i < data.items.length; i++) {
             embed.addField(`${data.items[i].name}`, `Damage: ${data.items[i].damage}\nType: ${data.items[i].type}\nPreview: [here](${data.items[i].img})\nID: ${data.items[i].id}`,true)

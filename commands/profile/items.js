@@ -1,11 +1,14 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
 const { util } = require('discord.js-commando')
 const { RichEmbed } = require('discord.js')
-module.exports = class ReplyCommand extends Command {
+
+module.exports = class ItemsCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'items',
-            group: 'commands',
+            group: 'profile',
             memberName: 'items',
             description: 'Shows your items.',
             examples: ['items'],
@@ -28,10 +31,9 @@ module.exports = class ReplyCommand extends Command {
 
       
         let embed = new RichEmbed()
-        .setAuthor(msg.author.tag + ' Items', msg.author.displayAvatarURL)
-        .setDescription(paginated.items.map(i => `ID: ${i.id} Name: ${i.name}\nDescription: ${i.description}\nDamage: ${i.damage} / Health: ${i.health}`).join("\n"))
-        .setColor("RANDOM")
+            .setAuthor(msg.author.tag + ' Items', msg.author.displayAvatarURL)
+            .setDescription(paginated.items.map(i => `ID: ${i.id} Name: ${i.name}\nDescription: ${i.description}\nDamage: ${i.damage} / Health: ${i.health}`).join("\n"))
+            .setColor("RANDOM")
         msg.embed(embed)
-
     }
 }; 

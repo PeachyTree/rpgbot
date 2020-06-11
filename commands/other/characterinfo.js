@@ -1,10 +1,12 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
 const { RichEmbed } = require('discord.js')
-module.exports = class ReplyCommand extends Command {
+module.exports = class CharacterInfoCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'characterinfo',
-            group: 'commands',
+            group: 'other',
             memberName: 'characterinfo',
             description: 'Checks the info about a [GOD] || [TITAN] || [HALF-GOD].',
             examples: ['characterinfo'],

@@ -1,10 +1,13 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
 const { RichEmbed } = require('discord.js')
-module.exports = class ReplyCommand extends Command {
+
+module.exports = class ProfileCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'profile',
-            group: 'commands',
+            group: 'profile',
             memberName: 'profile',
             aliases: ["p", "prof"],
             description: 'profile',
@@ -46,23 +49,22 @@ module.exports = class ReplyCommand extends Command {
       
       
         let embed = new RichEmbed()
-        .setTitle(`${user.tag}'s profile (${this.client.profile.get(user.id, "character").class})`)
-        .addField('Helmet ⛑', helmet,true)
-        .addField('Chestplate 🎽', chestplate,true)
-        .addField('Leggings 👖', leggings,true)
-        .addField('Boots 👟', boots,true)
-        .addField('Level', this.client.profile.get(`${user.id}`, "level"),true)
-        .addField('Sword ⚔', sword,true)
-        .addField('Spell', spell)
-        .addField('Bow 🏹', bow,true)
-        .addField('Shield 🛡', shield,true)
-        .addField('Pet', pet, true)
-        .addField('Staff 🕎', staff,true)
-        .addField('Orbs 🔮', this.client.profile.get(user.id, "orbs"), true)
-        .addField(`Damage 🎯`, this.client.profile.get(user.id, "damage"),true)
-        .addField('Health 🌡', this.client.profile.get(user.id, "health"),true)
-        .setColor("RANDOM");
+            .setTitle(`${user.tag}'s profile (${this.client.profile.get(user.id, "character").class})`)
+            .addField('Helmet ⛑', helmet,true)
+            .addField('Chestplate 🎽', chestplate,true)
+            .addField('Leggings 👖', leggings,true)
+            .addField('Boots 👟', boots,true)
+            .addField('Level', this.client.profile.get(`${user.id}`, "level"),true)
+            .addField('Sword ⚔', sword,true)
+            .addField('Spell', spell)
+            .addField('Bow 🏹', bow,true)
+            .addField('Shield 🛡', shield,true)
+            .addField('Pet', pet, true)
+            .addField('Staff 🕎', staff,true)
+            .addField('Orbs 🔮', this.client.profile.get(user.id, "orbs"), true)
+            .addField(`Damage 🎯`, this.client.profile.get(user.id, "damage"),true)
+            .addField('Health 🌡', this.client.profile.get(user.id, "health"),true)
+            .setColor("RANDOM");
         msg.embed(embed)
-
     }
 };

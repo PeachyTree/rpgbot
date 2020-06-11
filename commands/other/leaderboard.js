@@ -1,10 +1,13 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command, util } = require('discord.js-commando');
 const { RichEmbed } = require('discord.js')
-module.exports = class ReplyCommand extends Command {
+
+module.exports = class LeaderboardCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'leaderboard',
-            group: 'commands',
+            group: 'other',
             memberName: 'leaderboard',
             description: 'Shows the leaderboard of what you specify.',
             examples: ['leaderboard <type> || !leaderboard money'],

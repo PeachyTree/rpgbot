@@ -1,6 +1,6 @@
 {
     "name": "rpgbot",
-    "version": "0.7.6",
+    "version": "0.8.0",
     "description": "A Discord bot with a few useful roleplay commands, made with Discord.js.",
     "main": "RPGBot.js",
     "scripts": {

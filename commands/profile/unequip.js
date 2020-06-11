@@ -1,5 +1,8 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
-module.exports = class MeowCommand extends Command {
+
+module.exports = class UnEquipCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'unequip',

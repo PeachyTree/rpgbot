@@ -1,13 +1,12 @@
 const { Command } = require('discord.js-commando');
 const { RichEmbed } = require('discord.js');
-const { stripIndents } = require('common-tags');
 
 module.exports = class HelpCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'help',
 			aliases: ['commands', 'command-list'],
-			group: 'util',
+			group: 'other',
 			memberName: 'help',
 			description: 'Displays a list of available commands, or detailed information for a specific command.',
 			guarded: true,

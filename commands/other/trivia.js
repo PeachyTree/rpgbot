@@ -1,13 +1,16 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { RichEmbed } = require('discord.js')
 let question1 = require(`../../json/trivias.json`)
 let question = question1[Math.floor(Math.random() * question1.length)];
 const { Command } = require('discord.js-commando');
 const moment = require('moment')
-module.exports = class ReplyCommand extends Command {
+
+module.exports = class TriviaCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'trivia',
-            group: 'commands',
+            group: 'other',
             memberName: 'trivia',
             description: 'Play trivia and earn rewards.',
             examples: ['trivia']
@@ -15,7 +18,8 @@ module.exports = class ReplyCommand extends Command {
     }
 
     run(msg) {
-              if (this.client.profile.get(msg.author.id, "started") == "no") return msg.say('You have not started your adventure, use `!start`.')
+
+        if (this.client.profile.get(msg.author.id, "started") == "no") return msg.say('You have not started your adventure, use `!start`.')
         let thing = 1;  
         let rewards;
         let random = Math.floor(Math.random() * 1000) + 1;
@@ -36,7 +40,6 @@ module.exports = class ReplyCommand extends Command {
               .setDescription(`${question.question}\n${question.answers.map(i => `*${thing++})* **_${i}_**\n`)}`.replace(',', '').replace(',', '').replace(',', '').replace(',', '').replace(',', ''))
               .setFooter(`Please use the numbers, don't use the answer texts. You have 60 seconds to answer.`)
               .setColor("RANDOM")
-          
           msg.channel.send(embed).then(m => {
             const filter = m => m.author.id === msg.author.id && !m.author.bot;
             msg.channel.awaitMessages(filter, {

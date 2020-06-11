@@ -1,11 +1,14 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
 const { util } = require('discord.js-commando')
 const { RichEmbed } = require('discord.js')
-module.exports = class ReplyCommand extends Command {
+
+module.exports = class InventoryCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'inventory',
-            group: 'commands',
+            group: 'profile',
             aliases: ["i", "inv", "backpack"],
             memberName: 'inventory',
             description: 'Shows your inventory.',
@@ -29,13 +32,13 @@ module.exports = class ReplyCommand extends Command {
 
 
         let data = paginated.items
-                if (data.health === undefined) data.health = 0;
+        if (data.health === undefined) data.health = 0;
         if (data.damage === undefined) data.damage = 0;
-            let embed = new RichEmbed()
+        let embed = new RichEmbed()
             .setTitle(`${msg.author.tag}'s Inventory! 🎒 | Page ${paginated.page}`)
             .setDescription(`${data.map(i => `**${i.name}** ***=>*** **Damage: ${i.damage}** ***=>*** **Health: ${i.health}** ***=>*** **ID: ${i.id}** ***=>*** **Type: ${i.type}**`).join("\n")}`)
             .setFooter(`To view another page do !inventory <page>`)
             .setColor("RANDOM")
-            msg.embed(embed)
+        msg.embed(embed)
     }
 };

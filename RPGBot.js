@@ -25,7 +25,8 @@ client.registry
   .registerDefaultTypes()
   .registerGroups([
     ['roleplay', 'Roleplay'],
-    ['other', 'Other']
+    ['other', 'Other'],
+    ['profile', 'Profile']
   ])
   .registerDefaultGroups()
   .registerDefaultCommands({help: false})

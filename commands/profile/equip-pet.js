@@ -1,11 +1,14 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
-module.exports = class MeowCommand extends Command {
+
+module.exports = class EquipPetCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'equip-pet',
-			group: 'commands',
+			group: 'profile',
 			memberName: 'equip-pet',
-      aliases: ["pet-equip"],
+            aliases: ["pet-equip"],
             description: 'Equips the pet you choose.',
             args: [
                 {
@@ -18,7 +21,8 @@ module.exports = class MeowCommand extends Command {
 	}
 
 	run(msg, { itemid }) {
-            if (this.client.profile.get(msg.author.id, "started") == "no") return msg.say('You have not started your adventure, use `!start`.')
+        
+    if (this.client.profile.get(msg.author.id, "started") == "no") return msg.say('You have not started your adventure, use `!start`.')
 
     let array = this.client.profile.get(msg.author.id, "pets")
     let data = array.findIndex(obj => obj.id === itemid)

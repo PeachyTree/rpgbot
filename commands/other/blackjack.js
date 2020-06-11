@@ -1,4 +1,6 @@
-const {Command} = require('discord.js-commando');
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
+const { Command } = require('discord.js-commando');
 const { stripIndents } = require('common-tags');
 const { shuffle, verify } = require('../../util/jack');
 const suits = ['♣', '♥', '♦', '♠'];
@@ -8,7 +10,7 @@ module.exports = class BlackjackCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'blackjack',
-			group: 'commands',
+			group: 'other',
 			memberName: 'blackjack',
             description: 'Play a game of blackjack.',
             args: [
@@ -24,7 +26,8 @@ module.exports = class BlackjackCommand extends Command {
 	}
 
 	async run(msg, { bet }) {
-                  if (this.client.profile.get(msg.author.id, "started") == "no") return msg.say('You have not started your adventure, use `!start`.')
+
+		if (this.client.profile.get(msg.author.id, "started") == "no") return msg.say('You have not started your adventure, use `!start`.')
         if (msg.content.includes('-')) return msg.say('Negative values may not be used.')
         let deckCount = 1
         const money = bet * 2
