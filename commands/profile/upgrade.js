@@ -1,10 +1,12 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
 
-module.exports = class ReplyCommand extends Command {
+module.exports = class UpgradeCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'upgrade',
-            group: 'commands',
+            group: 'profile',
             memberName: 'upgrade',
             description: 'Upgrade your workers!',
             examples: ['upgrade'],

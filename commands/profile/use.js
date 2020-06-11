@@ -1,10 +1,12 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
-const moment = require('moment')
-module.exports = class ReplyCommand extends Command {
+
+module.exports = class UseCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'use',
-            group: 'commands',
+            group: 'profile',
             memberName: 'use',
             description: 'Use boosters which gives you extra stuff.',
             examples: ['use'],
@@ -19,13 +21,10 @@ module.exports = class ReplyCommand extends Command {
         });
     }
 
-   async run(msg, { item }) {
-
-        let arr = this.client.profile.get(msg.author.id, "items")
-
-        let data = arr.findIndex(i => i.name === item.toLowerCase())
+    async run(msg, { item }) {
         
-      
+        let arr = this.client.profile.get(msg.author.id, "items")
+        let data = arr.findIndex(i => i.name === item.toLowerCase())
 
         console.log(arr[data])
         
@@ -36,11 +35,10 @@ module.exports = class ReplyCommand extends Command {
         if (this.client.boosters.get(msg.author.id, arr[data].type) !== "disabled") return msg.say('You already have an ' + arr[data].type + ' booster enabled.')
         msg.say('`' + msg.author.tag + '`' + `, Are you sure about using \`` + arr[data].name + '`?')
         const msgs = await msg.channel.awaitMessages(res => res.author.id === msg.author.id, {
-           time: 60000,
-           max: 1,
+            time: 60000,
+            max: 1,
         })
 
-        
         if (msgs.first().content !== "yes") msg.say(`Cancelled usage.`)
 
         msg.say(`Successfully used an ${arr[data].type} booster! will stay on for 30 minutes.`)
@@ -48,8 +46,6 @@ module.exports = class ReplyCommand extends Command {
         this.client.profile.delete(msg.author.id, `items.${data}`)
         this.client.boosters.set(msg.author.id, "enabled", arr[data].type)
         this.client.boosters.set(msg.author.id, Date.now(), arr[data].type + 'time')
-
-
         
         setTimeout(() => {
             msg.author.send('Your ' + arr[data].type + ' booster has ran out!' )

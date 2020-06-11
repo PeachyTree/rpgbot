@@ -1,11 +1,14 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command } = require('discord.js-commando');
 const bosses = require('../../json/bosses')
 const { RichEmbed } = require('discord.js')
-module.exports = class BossBattle extends Command {
+
+module.exports = class BossBattleCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'bossbattle',
-            group: 'commands',
+            group: 'roleplay',
             memberName: 'bossbattle',
             description: 'Battle the bosses.',
             examples: ['bossbattle'],
@@ -20,10 +23,10 @@ module.exports = class BossBattle extends Command {
         this.battle = new Set()
     }
 
-  async run(msg, { boss }) {
-            if (this.client.profile.get(msg.author.id, "started") == "no") return msg.say('You have not started your adventure, use `!start`.')
+    async run(msg, { boss }) {
+        if (this.client.profile.get(msg.author.id, "started") == "no") return msg.say('You have not started your adventure, use `!start`.')
         if (this.battle.has(msg.channel.id)) return msg.say('Only one battle may occur per channel! to prevent spam.')
-       this.battle.add(msg.channel.id)
+        this.battle.add(msg.channel.id)
 
         let mob = bosses.find(obj => obj.name === boss.toLowerCase()) 
         if (!mob) return msg.say('I could not find that boss! check which ones exist with `!bosses`')
@@ -47,10 +50,6 @@ module.exports = class BossBattle extends Command {
           } else if(random3 > 7) {
             miss(msg, mob, bossattack.attack)
           }
-         // msg.channel.send({embed: {
-          //  color: 0xf71800,
-          //  description: `${mob.name} used \`${bossattack.attack}\`! it hit you with `
-         // }})
           
           if (myhealth < 1) {
                 lost(msg, mob, mobhealth)
@@ -132,12 +131,13 @@ module.exports = class BossBattle extends Command {
 
 function win(msg, boss, xp, orbs, client) {
   let embed = new RichEmbed()
-  .setTitle(`${boss.name} was defeated!`)
-  .addField(`Orbs Won 🔮`, '**' + orbs + '**')
-  .addField('XP Won 🎆', '**' + xp + '**')
-  .addField('Weapon Won 💠', boss.weapon)
-  .setColor("RANDOM")
+    .setTitle(`${boss.name} was defeated!`)
+    .addField(`Orbs Won 🔮`, '**' + orbs + '**')
+    .addField('XP Won 🎆', '**' + xp + '**')
+    .addField('Weapon Won 💠', boss.weapon)
+    .setColor("RANDOM")
   msg.embed(embed)
+
   let weaponid = client.util.get(client.user.id, "weaponids")
   client.profile.push(msg.author.id, { id: weaponid + 1, name: boss.weapon, health: 0, damage: boss.damage, type: boss.type }, "weapons")
   client.util.inc(client.user.id, "weaponids")
@@ -155,12 +155,14 @@ function attack(msg, boss, attack, dmg) {
     description: `${boss.name} used \`${attack}\`! it dealt **${dmg}**.`
   }})
 }
+
 function userheavy(msg, boss, dmg) {
   msg.channel.send({embed: {
     color: 0xf71800,
     description: `You hit ${boss} with a heavy! it deals **${dmg}** damage!`
   }})
 }
+
 function heavy(msg, boss, heavy, dmg) {
   msg.channel.send({embed: {
     color: 0xf71800,
@@ -184,8 +186,8 @@ function usermiss(msg, boss) {
 
 function lost(msg, boss, health) {
    let embed = new RichEmbed() 
-   .setTitle('Boss Battle Lost!')
-   .setDescription(`You lost the boss battle to ${boss.name} with **${health}** HP left, level up and earn more weapons to beat it and try again later.`)
-   .setColor("RANDOM")
+    .setTitle('Boss Battle Lost!')
+    .setDescription(`You lost the boss battle to ${boss.name} with **${health}** HP left, level up and earn more weapons to beat it and try again later.`)
+    .setColor("RANDOM")
    msg.embed(embed)
 }

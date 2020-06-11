@@ -1,11 +1,14 @@
+// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+
 const { Command, util } = require('discord.js-commando');
 const items = require('../../json/alchemist.json')
 const { RichEmbed } = require('discord.js')
-module.exports = class ReplyCommand extends Command {
+
+module.exports = class AlchemistCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'alchemist',
-            group: 'commands',
+            group: 'roleplay',
             memberName: 'alchemist',
             description: 'Buy potions / spells from an alchemist.',
             examples: ['alchemist buy <name>'],
@@ -21,17 +24,13 @@ module.exports = class ReplyCommand extends Command {
     }
 
     run(msg, { page }) {
-
-        
-     let data =  util.paginate(items, page, Math.floor(5))
-        
+        let data =  util.paginate(items, page, Math.floor(5))
      
         let embed = new RichEmbed()
-        .setTitle('Alchemist Shop! ✨')
-        .setDescription(data.items.map(i => `Name: **${i.name}**\nDescription: ***${i.description}***\n\n`))
-        .setColor("RANDOM")
-        .setFooter('Use !spell buy <spell>')
+            .setTitle('Alchemist Shop! ✨')
+            .setDescription(data.items.map(i => `Name: **${i.name}**\nDescription: ***${i.description}***\n\n`))
+            .setColor("RANDOM")
+            .setFooter('Use !spell buy <spell>')
         msg.embed(embed)
-
     }
 };
