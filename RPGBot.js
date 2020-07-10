@@ -1,14 +1,15 @@
 // Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
 
 require("dotenv").config();
+const { RPGBOT_TOKEN, RPGBOT_PREFIX, OWNER_ID } = process.env;
 const { CommandoClient } = require('discord.js-commando');
 const { RichEmbed } = require('discord.js');
 const path = require('path');
 const Enmap = require('enmap');
 const client = new CommandoClient({
-  commandPrefix: process.env.RPGBOT_PREFIX,
+  commandPrefix: RPGBOT_PREFIX,
   unknownCommandResponse: false,
-  owner: process.env.OWNER_ID,
+  owner: OWNER_ID,
   disableEveryone: true
 });
 
@@ -107,9 +108,4 @@ client.on('message', msg => {
   }
 })
 
-/*
-client.on('guildCreate', guild => {
-})
-*/
-
-client.login(process.env.RPGBOT_TOKEN);
+client.login(RPGBOT_TOKEN);
