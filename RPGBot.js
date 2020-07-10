@@ -1,7 +1,7 @@
 // Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
 
 require("dotenv").config();
-const { RPGBOT_TOKEN, RPGBOT_PREFIX, OWNER_ID }
+const { RPGBOT_TOKEN, RPGBOT_PREFIX, OWNER_ID } = process.env;
 const { CommandoClient } = require('discord.js-commando');
 const { RichEmbed } = require('discord.js');
 const path = require('path');
