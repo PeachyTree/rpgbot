@@ -1,4 +1,4 @@
-// Copyright (©) 2020 Azura Apple. All rights reserved. MIT License.
+// Copyright (©) 2020-2021 Shin#0484. All rights reserved. MIT License.
 
 require("dotenv").config();
 const { RPGBOT_TOKEN, RPGBOT_PREFIX, OWNER_ID } = process.env;
